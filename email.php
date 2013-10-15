@@ -1,7 +1,9 @@
 <?php
-require 'class/class.phpmailer.php';
 
-$mail = new PHPMailer;
+ini_set('display_errors', 1);
+ini_set('log_errors', 1);
+ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
+error_reporting(E_ALL);
 
 if(isset($_POST['email']) && $_POST['email'] == ''){
 	header( 'Location: index.php?email=err');
