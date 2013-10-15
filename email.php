@@ -9,7 +9,7 @@ if(isset($_POST['email']) && $_POST['email'] == ''){
 	header( 'Location: index.php?email=err');
 	exit();
 }
-$hash = md5($_POST['mail'].date('U'));
+$hash = md5($_POST['email'].date('U'));
 
 //Cabecalho
 $header= "From:Sysup <contato@sysup.us>\r\n";
