@@ -8,32 +8,31 @@ if(isset($_POST['email']) && $_POST['email'] == ''){
 	exit();
 }
 $hash = md5($_POST['mail'].date('U'));
-$mail->isSMTP();
-$mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->SMTPSecure = "tls";                 // sets the prefix to the servier
-$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
-$mail->Port       = 587;
 
-$mail->Username = 'murilo.mothsin@gmail.com';
-$mail->Password = '1111117642';
+//Cabecalho
+$header= "From:Sysup <contato@sysup.us>\r\n";
+$header.= "Reply-To: murilo.mothsin@gmail.com\r\n";
+$header.= "MIME-Version: 1.0\r\n";
+$header.="Content-Type: text/html; charset=utf-8\r\n";
 
-//$mail->Charset = 'UTF-8';
-$mail->From = 'newsletter@sysup.us';
-$mail->FromName = 'SysUP';
-$mail->addAddress($_POST['email']);
+//Destinatario
+$to = $_POST['email'];
 
-$mail->WordWrap = 50;
-$mail->isHTML(true);
+//Assunto
+$subject= html_entity_decode('Bem-vindo a Sysyup');
 
-$mail->Subject = 'Bem-vindo';
-$mail->Body    = utf8_decode('<meta charset="utf-8">
+//Mensagem
+$body = utf8_decode('<meta charset="utf-8">
 <center><div style="width: 400px; height: 300px; border: 1px solid #EEE; border-radius: 5pt;"><h3>Bem-vindo a SysUp</h3><br><br><br>
 <p>Você está cadastrado para receber as novidades sobre nosso site!</p><br><br><br><br>
 <p style="color: #DDD; font-size: 10px;">Para não receber mais avisos clique no <a href="sysup.us/unregister.php?email='.$hash.'">link</a></p>
 </div></center>');
-$mail->AltBody = 'Bem-vindo a SysUp!    Você receberá as novidades sobre nosso site!';
 
-if(!$mail->send()) {
+$email = mail($to, $subject, $body, $header);
+
+// $mail->AltBody = 'Bem-vindo a SysUp!    Você receberá as novidades sobre nosso site!';
+
+if(!$email) {
    echo 'Message could not be sent.<br>';
    echo 'Mailer Error: ' . $mail->ErrorInfo;
    exit;

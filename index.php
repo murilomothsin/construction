@@ -63,9 +63,9 @@
 	?>
 
 	<div class="box">
-		<h4>SysUp</h4>
+		<h2>SysUp</h2><hr style="border-bottom: 1px #CCC solid;">
 		<p>
-			Estamos construindo um novo site e uma nova ideia de serviços para web. <br /><br />Cadastre-se na nossa newsletter e receba as novidades de nossos sistemas e trabalhos.
+			Estamos construindo um novo site e uma nova ideia de serviços para web. <br /><br />Para conhecer mais do nosso trabalho cadastre-se e recebe novidades via e-mail.
 		</p>
 		<br><br><br><br>
 		<span class="text-info">10% - Criando conceitos</span>
@@ -91,4 +91,16 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/alert.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44847942-1', 'sysup.us');
+  ga('send', 'pageview');
+
+</script>
+
 </html>
