@@ -66,7 +66,7 @@
 		<img src="img/logo.png" style="width: 200px;">
 		<hr style="border-bottom: 1px #CCC solid;">
 		<p>
-			Estamos construindo um novo site e uma nova ideia de serviços para web. <br /><br />Para conhecer mais do nosso trabalho cadastre-se e recebe novidades via e-mail.
+			Estamos construindo um novo site e uma nova ideia de serviços para web. <br /><br />Para conhecer mais do nosso trabalho cadastre-se e receba novidades via e-mail.
 		</p>
 		<br><br><br><br>
 		<span class="text-info">10% - Criando conceitos</span>
