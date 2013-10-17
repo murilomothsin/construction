@@ -16,7 +16,7 @@
 		top: 30%;
 		min-height: 40%;
 		width: 40%;
-		background-color: #EFEFEF;
+		background-color: #F0F0F0;
 		padding: 5px;
 		/*border: 1px solid #CCC;*/
 		border-radius: 5pt;
@@ -63,7 +63,8 @@
 	?>
 
 	<div class="box">
-		<h2>SysUp</h2><hr style="border-bottom: 1px #CCC solid;">
+		<img src="img/logo.png" style="width: 200px;">
+		<hr style="border-bottom: 1px #CCC solid;">
 		<p>
 			Estamos construindo um novo site e uma nova ideia de serviços para web. <br /><br />Para conhecer mais do nosso trabalho cadastre-se e recebe novidades via e-mail.
 		</p>
