@@ -63,7 +63,7 @@
 	?>
 
 	<div class="box">
-		<img src="img/logo.png" style="width: 200px;">
+		<img src="img/logo.png" style="width: 220px; margin-top: 10px;">
 		<hr style="border-bottom: 1px #CCC solid;">
 		<p>
 			Estamos construindo um novo site e uma nova ideia de serviços para web. <br /><br />Para conhecer mais do nosso trabalho cadastre-se e receba novidades via e-mail.
