@@ -13,7 +13,7 @@
 	.box {
 		position: absolute;
 		left: 30%;
-		top: 30%;
+		top: 20%;
 		min-height: 40%;
 		width: 40%;
 		background-color: #F0F0F0;
